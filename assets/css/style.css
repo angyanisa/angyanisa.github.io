@@ -559,7 +559,7 @@ main {
 /**
  * #testimonials 
  */
-
+/*
 .testimonials { margin-bottom: 30px; }
 
 .testimonials-title { margin-bottom: 20px; }
@@ -606,12 +606,12 @@ main {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-
+*/
 
 /**
  * #testimonials-modal
  */
-
+/*
 .modal-container {
   position: fixed;
   top: 0;
@@ -720,12 +720,12 @@ main {
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
-
+*/
 
 /**
  * #clients 
  */
-
+/*
 .clients { margin-bottom: 15px; }
 
 .clients-list {
@@ -756,7 +756,7 @@ main {
 
 .clients-item img:hover { filter: grayscale(0); }
 
-
+*/
 
 
 
