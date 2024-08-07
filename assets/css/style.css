@@ -68,6 +68,8 @@
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
+  --creme: hsl(0.13, 61%, 90%)
+  
 
   /**
    * typography
@@ -155,7 +157,7 @@ input, textarea {
 
 html { font-family: var(--ff-poppins); }
 
-body { background: var(--smoky-black); }
+body { background: var(--creme); }
 
 
 
