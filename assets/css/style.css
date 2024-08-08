@@ -1026,19 +1026,52 @@ main {
 
 
 /*-----------------------------------*\
-  #ABOUT
+  #PROJECT SKILLS
 \*-----------------------------------*/
 
-.proj1 .article-title { margin-bottom: 15px; }
+.proj-skills { margin-bottom: 35px; }
 
-.proj1-text {
+.proj-skills-title { margin-bottom: 20px; }
+
+.proj-skills-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.proj-skills-item {
+  position: relative;
+  background: var(--border-gradient-onyx);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  z-index: 1;
+}
+
+.proj-skills-item::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.proj-skills-icon-box { margin-bottom: 10px; }
+
+.proj-skills-icon-box img { margin: auto; }
+
+.proj-skills-content-box { text-align: center; }
+
+.proj-skills-item-title { margin-bottom: 7px; }
+
+.proj-skills-item-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
-  font-weight: var(--fw-300);
+  font-weight: var(--fw-3);
   line-height: 1.6;
 }
 
-.proj1-text p { margin-bottom: 15px; }
 
 
 
