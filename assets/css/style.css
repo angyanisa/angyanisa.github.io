@@ -1054,7 +1054,7 @@ main {
   inset: 1px;
   background: var(--bg-gradient-jet);
   border-radius: inherit;
-  z-index: 0;
+  z-index: -1;
 }
 
 .proj-skills-icon-box { margin-bottom: 10px; }
