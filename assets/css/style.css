@@ -1046,6 +1046,9 @@ main {
   border-radius: 14px;
   box-shadow: var(--shadow-2);
   z-index: 1;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
 }
 
 .proj-skills-item::before {
@@ -1057,7 +1060,9 @@ main {
   z-index: -1;
 }
 
-.proj-skills-icon-box { margin-bottom: 10px; }
+.proj-skills-icon-box {
+  margin-right: 20px;
+  margin-bottom: 10px; }
 
 .proj-skills-icon-box img { 
   display: block;
