@@ -1059,9 +1059,14 @@ main {
 
 .proj-skills-icon-box { margin-bottom: 10px; }
 
-.proj-skills-icon-box img { margin: auto; }
+.proj-skills-icon-box img { 
+  display: block;
+  width: 40px;
+  height: auto;
+  /*margin: auto;*/
+}
 
-.proj-skills-content-box { text-align: center; }
+.proj-skills-content-box { /*text-align: center;*/ }
 
 .proj-skills-item-title { margin-bottom: 7px; }
 
