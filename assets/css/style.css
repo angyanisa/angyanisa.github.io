@@ -1050,7 +1050,6 @@ main {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 20px;
-  align-items: center;
 }
 
 .proj-skills-item::before {
@@ -1070,8 +1069,6 @@ main {
   height: auto;
   /*margin: auto;*/
 }
-
-.proj-skills-content-box { /*text-align: center;*/ }
 
 .proj-skills-item-title { margin-bottom: 7px; }
 
