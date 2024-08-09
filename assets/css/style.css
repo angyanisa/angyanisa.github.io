@@ -1047,7 +1047,9 @@ main {
   box-shadow: var(--shadow-2);
   z-index: 1;
   margin: 20px auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
   align-items: center;
 }
 
