@@ -23,6 +23,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- <style>
+    .highlight-text {
+      color: hsl(45, 100%, 72%);
+    }
+  </style> -->
 </head>
 
 <body>
@@ -647,8 +653,11 @@
 
         <header>
           <a class="navbar-link" data-nav-link data-target="portfolio">
-            <ion-icon name="arrow-back-outline" style="zoom:4.0;"></ion-icon>
-            <h5>Back to Projects</h5>
+            <span>
+              <ion-icon name="arrow-back-outline" style="zoom:4.0;"></ion-icon>
+              <h5>Back to Projects</h5>
+            </span>
+            
           </a>
           <h2 class="h2 article-title">SensoPatch</h2>
         </header>
@@ -738,6 +747,7 @@
           <h3 class="h3 proj-skills-item-title">How It Works</h3>
           <br>
           <img src="./assets/images/project-senso2.jpg" alt="sensopatch_2" style="width:400px;">
+          <br>
           <section class="about-text">
           <p>
             The tactile sensor array collects and wirelessly transmits pressure information to a set of haptic feedback patches that convert the sensor data into
@@ -760,10 +770,9 @@
           <p>
             SensoPatch is a reconfigurable, open-source tool that allows future research to conduct studies on various aspects of the optimal method of haptic feedback delivery.
             As part of the preliminary study, participants were recruited to complete blindfold discrimination and functional tasks using controlling myoelectric hand
-            via EMG and bypass prosthetic. <span>The full details of this project can be found on the paper <a href="https://arxiv.org/abs/2409.19155" target="_blank"><b>HERE!</b></a></span>
+            via EMG and bypass prosthetic. <span>The full details of this project can be found on the paper <a href="https://arxiv.org/abs/2409.19155" target="_blank"><b style="color: hsl(45, 100%, 72%);">HERE!</b></a></span>
           </p>
           </section>
-          <br>
           <img src="./assets/images/project-senso3.jpg" alt="sensopatch_3" style="width:400px;">
         </section>
 
@@ -812,9 +821,14 @@
         </section>
 
         <section class="about-text">
-          Developed and assembled a quadcopter with brushless motors using Linux on Raspberry Pi.
-          Streamed real-time IMU data (from Arduino via I2C), GPS, and webcam video via WiFi from Raspberry Pi to web server.
+          I developed and assembled a quadcopter with brushless motors using Linux on Raspberry Pi.
+          The quadcopter streamed real-time IMU data (from Arduino via I2C), GPS, and webcam video via WiFi from Raspberry Pi to web server.
         </section>
+        <br>
+        <span>
+          <img src="./assets/images/project-copter.jpg" alt="copter_1" style="width:300px;">
+          <img src="./assets/images/project-copter2.jpg" alt="copter_2" style="width:300px;">
+        </span>
 
       </article>
   
