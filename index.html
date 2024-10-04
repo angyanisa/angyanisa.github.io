@@ -127,13 +127,13 @@
             <button class="navbar-link" data-nav-link data-target="portfolio">Portfolio</button>
           </li>
 
-          <li class="navbar-item">
+          <!-- <li class="navbar-item">
             <button class="navbar-link" data-nav-link data-target="blog">Blog</button>
           </li>
 
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link data-target="contact">Contact</button>
-          </li>
+          </li> -->
 
         </ul>
 
@@ -414,7 +414,7 @@
 
         <section class="projects">
 
-          <ul class="filter-list">
+          <!-- <ul class="filter-list">
 
             <li class="filter-item">
               <button class="active" data-filter-btn>All</button>
@@ -432,9 +432,9 @@
               <button data-filter-btn>Web development</button>
             </li>
 
-          </ul>
+          </ul> -->
 
-          <div class="filter-select-box">
+          <!-- <div class="filter-select-box">
 
             <button class="filter-select" data-select>
 
@@ -466,7 +466,7 @@
 
             </ul>
 
-          </div>
+          </div> -->
 
           <ul class="project-list">
 
@@ -489,24 +489,24 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+              <a data-nav-link data-target="proj-copter">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                  <img src="./assets/images/project-copter.jpg" alt="copter" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Orizon</h3>
+                <h3 class="project-title">Quadcopter Flight Control</h3>
 
                 <p class="project-category">Web development</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <!-- <li class="project-item  active" data-filter-item data-category="web design">
               <a href="#">
 
                 <figure class="project-img">
@@ -630,7 +630,7 @@
                 <p class="project-category">Web development</p>
 
               </a>
-            </li>
+            </li> -->
 
           </ul>
 
@@ -756,12 +756,60 @@
           <p>
             SensoPatch is a reconfigurable, open-source tool that allows future research to conduct studies on various aspects of the optimal method of haptic feedback delivery.
             As part of the preliminary study, participants were recruited to complete blindfold discrimination and functional tasks using controlling myoelectric hand
-            via EMG and bypass prosthetic. The full details of this project can be found on the paper here!
+            via EMG and bypass prosthetic. The full details of this project can be found on the paper <a href="https://arxiv.org/abs/2409.19155"><b>HERE!</b></a>
           </p>
         </section>
 
       </article>
+      
+      
+      <!--
+        - #PROJECT: QUADCOPTER
+      -->
 
+      <article class="portfolio" data-page="proj-copter">
+
+        <header>
+          <a class="navbar-link" data-nav-link data-target="portfolio">
+            <ion-icon name="arrow-back-outline" style="zoom:4.0;"></ion-icon>
+            <h5>Back to Projects</h5>
+          </a>
+          <h2 class="h2 article-title">Quadcopter Flight Control</h2>
+        </header>
+
+        <section class="proj-skills">
+
+          <ul class="proj-skills-list">
+
+            <li class="proj-skills-item">
+
+              <div class="proj-skills-icon-box">
+                <img src="./assets/images/icon-robot-palm.svg
+                " alt="robot palm icon" width="50">
+              </div>
+
+              <div>
+                <h4 class="h4 proj-skills-item-title">Skills</h4>
+
+                <p class="proj-skills-item-text">
+                  - Linux on Raspberry Pi<br>
+                  - I2C, SPI, WiFi
+                  - IMU
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <section class="about-text">
+          Developed and assembled a quadcopter with brushless motors using Linux on Raspberry Pi.
+          Streamed real-time IMU data (from Arduino via I2C), GPS, and webcam video via WiFi from Raspberry Pi to web server.
+        </section>
+
+      </article>
   
       <!--
         - #BLOG
