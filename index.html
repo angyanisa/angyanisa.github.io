@@ -502,7 +502,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-copter.jpg" alt="copter" loading="lazy">
+                  <img src="./assets/images/project-copter3.jpg" alt="copter_3" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Quadcopter Flight Control</h3>
@@ -512,7 +512,7 @@
               </a>
             </li>
 
-            <!-- <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="web design">
               <a href="#">
 
                 <figure class="project-img">
@@ -523,14 +523,14 @@
                   <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Fundo</h3>
+                <h3 class="project-title">The Wizard Game</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category"> A finite state machine of two player real-time strategy game</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
+            <!-- <li class="project-item  active" data-filter-item data-category="applications">
               <a href="#">
 
                 <figure class="project-img">
@@ -678,9 +678,9 @@
 
                 <p class="proj-skills-item-text">
                   - Flex PCB design on KiCAD<br>
-                  - ARM cortex-M4F microcontroller<br>
+                  - nRF52 microcontroller<br>
                   - Bluetooth LE (6 peripherals)<br>
-                  - SMD soldering
+                  - THT/SMD soldering
                 </p>
               </div>
 
@@ -770,7 +770,7 @@
           <p>
             SensoPatch is a reconfigurable, open-source tool that allows future research to conduct studies on various aspects of the optimal method of haptic feedback delivery.
             As part of the preliminary study, participants were recruited to complete blindfold discrimination and functional tasks using controlling myoelectric hand
-            via EMG and bypass prosthetic. <span>The full details of this project can be found on the paper <a href="https://arxiv.org/abs/2409.19155" target="_blank"><b style="color: hsl(45, 100%, 72%);">HERE!</b></a></span>
+            via EMG and bypass prosthetic. The full details of this project can be found on the paper <a href="https://arxiv.org/abs/2409.19155" target="_blank"><b style="color: hsl(45, 100%, 72%);">CLICK HERE!</b></a>
           </p>
           </section>
           <img src="./assets/images/project-senso3.jpg" alt="sensopatch_3" style="width:400px;">
@@ -826,11 +826,73 @@
         </section>
         <br>
         <span>
-          <img src="./assets/images/project-copter.jpg" alt="copter_1" style="width:300px;">
-          <img src="./assets/images/project-copter2.jpg" alt="copter_2" style="width:300px;">
+          <img src="./assets/images/project-copter.jpg" alt="copter_1" style="width:300px; display: inline-block; margin-right: 10px;">
+          <img src="./assets/images/project-copter2.jpg" alt="copter_2" style="width:300px; display: inline-block;">
         </span>
 
       </article>
+
+      <!--
+        - #PROJECT: WIZARD GAME
+      -->
+
+      <article class="portfolio" data-page="proj-wizard">
+
+        <header>
+          <a class="navbar-link" data-nav-link data-target="portfolio">
+            <ion-icon name="arrow-back-outline" style="zoom:4.0;"></ion-icon>
+            <h5>Back to Projects</h5>
+          </a>
+          <h2 class="h2 article-title">Wizard Game</h2>
+        </header>
+
+        <section class="proj-skills">
+
+          <ul class="proj-skills-list">
+
+            <li class="proj-skills-item">
+
+              <div class="proj-skills-icon-box">
+                <img src="./assets/images/icon-drone.png
+                " alt="robot palm icon" width="50">
+              </div>
+
+              <div>
+                <h4 class="h4 proj-skills-item-title">Skills</h4>
+
+                <p class="proj-skills-item-text">
+                  - Linux on Raspberry Pi<br>
+                  - I2C, SPI, WiFi<br>
+                  - IMU
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <section class="about-text">
+          I assembled a quadcopter with brushless motors using Linux on Raspberry Pi.
+          The quadcopter streamed real-time IMU data (from Arduino via I2C), GPS, and webcam video via WiFi from Raspberry Pi to web server.
+        </section>
+        <br>
+        <span>
+          <img src="./assets/images/project-copter.jpg" alt="copter_1" style="width:300px;">
+          <img src="./assets/images/project-copter2.jpg" alt="copter_2" style="width:300px;">
+        </span>
+        <br>
+        <section class="about-text">
+          Example of the real-time IMU data on the web server
+          <video width="640" controls autoplay muted>
+            <source src="./assets/images/vdo-copter.mp4" type="video/mp4">
+          </video>
+        </section>
+        
+
+      </article>
+  
   
       <!--
         - #BLOG
