@@ -136,6 +136,13 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
+const pdfButton = document.querySelector('.pdf-btn');
+
+// Add click event listener to the button
+pdfButton.addEventListener('click', function() {
+  // Redirect to a website or open a PDF in a new tab
+  window.open('https://drive.google.com/file/d/1RHfdv1a7xtGfKSSLYdxY98_Nki57pazd/view?usp=sharing', '_blank');
+});
 
 
 // page navigation variables

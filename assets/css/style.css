@@ -1081,8 +1081,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 .pdf-btn {
   position: relative;
   width: 200px;
-  background: var(--bg-gradient-yellow-1);
-  color: var(--bg-gradient-yellow-1);
+  background: var(--orange-yellow-crayola);
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
