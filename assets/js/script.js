@@ -182,6 +182,9 @@ for (let i = 0; i < navigationLinks.length; i++) {
         navigationLinks[i].classList.remove("active");
       }
     }
+
+    const newUrl = `/${targetPage}`;
+    history.pushState(null, '', newUrl); // Modify the URL without refreshing
   });
 
 }
