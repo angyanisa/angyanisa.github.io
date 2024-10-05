@@ -540,7 +540,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-biogaming1.jng" alt="biogaming" loading="lazy">
+                  <img src="./assets/images/project-biogaming1.jpg" alt="biogaming" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Biogaming Controller</h3>
@@ -569,25 +569,25 @@
             </li>
         
 
-            <!-- <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="2023">
+              <a data-nav-link data-target="proj-ecg">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                  <img src="./assets/images/project-egc2.png" alt="egc_2" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">MetaSpark</h3>
+                <h3 class="project-title">ECG Circuit</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">Breadboard a circuit to ampliify and filter ECG signal</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <!-- <li class="project-item  active" data-filter-item data-category="web development">
               <a href="#">
 
                 <figure class="project-img">
@@ -834,11 +834,15 @@
         </span>
         <br>
         <section class="about-text">
+          Short flight demo
+          <video width="300" controls autoplay muted>
+            <source src="./assets/images/vdo-copter2.mp4" type="video/mp4">
+          </video>
           Example of the real-time IMU data on the web server
-        </section>
         <video width="640" controls autoplay muted>
           <source src="./assets/images/vdo-copter.mp4" type="video/mp4">
         </video>
+        </section>
         
 
       </article>
@@ -918,19 +922,22 @@
             <h3 class="h3 proj-skills-item-title">Design</h3>
             <section class="about-text">
                 The circuit consists of flip-flops, combinatorial logic, MUX, decoder, counter, timer chip,
-                7-segment displays for timer and mana levels, buttons for 3 actions, and reset button
-                <br>
-                Circuit Simulation
-                <img src="./assets/images/project-wizard2.jpg" alt="wizard_2" style="width:200px;">
-                <br>
-                Circuit wiring
-                <img src="./assets/images/project-wizard3.jpg" alt="wizard_3" style="width:500px;">
-                Finished product!
-                <img src="./assets/images/project-wizard.jpg" alt="wizard_1" style="width:500px;">
-                <br>
-                <img src="./assets/images/project-wizard4.jpg" alt="wizard_4" style="width:500px;">
-                <br>
-                * credits to all team members
+                7-segment displays for timer and mana levels, buttons for 3 actions, and reset button.
+                <p>
+                  Circuit Simulation
+                  <img src="./assets/images/project-wizard2.jpg" alt="wizard_2" style="width:200px;">
+                  <br>
+                  Circuit wiring
+                  <img src="./assets/images/project-wizard3.jpg" alt="wizard_3" style="width:500px;">
+                  <br>
+                  Finished product!
+                  <img src="./assets/images/project-wizard.jpg" alt="wizard_1" style="width:500px;">
+                  <br>
+                  <img src="./assets/images/project-wizard4.jpg" alt="wizard_4" style="width:500px;">
+                  <br>
+                  * credits to all team members
+                </p>
+                
             </section>
           </p>
 
@@ -1077,27 +1084,86 @@
           The headband features an IMU and pressure sensor. IMU data is used to control either 2-axis movement or 2-axis camera view (WASD keys) and sprint option (ctrl key).
           Blowing or sucking into the tube connected to pressure sensor simulates right and left mouse click. To toggle between using the IMU as
           movement mode or camera view mode, apply the maximum pressure to the tube.
-          <br>
+          <p>
           <span>
             <img src="./assets/images/project-biogaming2.jpg" alt="biogaming_2" style="width:250px; display: inline-block; margin-right: 10px;">
             <img src="./assets/images/project-biogaming.jpg" alt="biogaming_1" style="width:300px; display: inline-block;">
           </span>
-          <br>
+          </p>
           The foot tracker consists of 2 ultrasonic sensors. Tilting the foot at opposite angles controls jumping (space bar) and crouching (shift key).
           Rest position indicates no movement.
-          <br>
+          <p>
           <img src="./assets/images/project-biogaming3.jpg" alt="biogaming_3" style="width:300px;">
-          <br>
+          </p>
           With a total of 4 sensors, we achieved 13 distinct controls of the keyboard and mouse.
           In class competition, our team won the Minecraft obstacle course using this biogaming controller! Below is a demo of Minecraft control.
-          <br>
+          <p>
           <video width="300" controls muted>
             <source src="./assets/images/vdo-biogaming.mp4" type="video/mp4">
           </video>
-          <br>
+          </p>
           * credits to all team members
           </section>
 
+        </section>
+
+      </article>
+
+
+      <!--
+        - #PROJECT: QUADCOPTER
+      -->
+
+      <article class="portfolio" data-page="proj-ecg">
+
+        <header>
+          <a class="navbar-link" data-nav-link data-target="portfolio">
+            <ion-icon name="arrow-back-outline" style="zoom:4.0;"></ion-icon>
+            <h5>Back to Projects</h5>
+          </a>
+          <h2 class="h2 article-title">ECG Amplifier Circuit</h2>
+        </header>
+
+        <section class="proj-skills">
+
+          <ul class="proj-skills-list">
+
+            <li class="proj-skills-item">
+
+              <div class="proj-skills-icon-box">
+                <img src="./assets/images/icon-ecg.png
+                " alt="drone icon" width="50">
+              </div>
+
+              <div>
+                <h4 class="h4 proj-skills-item-title">Skills</h4>
+
+                <p class="proj-skills-item-text">
+                  - Breadboard<br>
+                  - Op-amps, rectifier, bandpass filter<br>
+                  - Oscilloscope, function generator, DMM
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="about-text">
+          I built a breadboard circuit using op-amps, rectifier, and RC bandpass filter to amplify and filter my own ECG signal!
+          <p>
+            Circuit diagram for ECG amplifier
+          </p>
+          <img src="./assets/images/project-ecg3.jpg" alt="ecg_3" style="width:500px;">
+
+          <p>
+            Circuit diagram for QRS detection
+          </p>
+          <img src="./assets/images/project-ecg4.jpg" alt="ecg_4" style="width:500px;">
+
+          <p>
+            Recording my own ECG signal with oscilloscope!
+          </p>
+          <img src="./assets/images/project-ecg.jpg" alt="ecg_1" style="width:200px;">
         </section>
 
       </article>
