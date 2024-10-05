@@ -1080,9 +1080,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 /* added */
 .pdf-btn {
   position: relative;
-  width: 100%;
-  background: var(--border-gradient-onyx);
-  color: var(--orange-yellow-crayola);
+  width: 200px;
+  background: var(--bg-gradient-yellow-1);
+  color: var(--bg-gradient-yellow-1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1100,7 +1100,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   content: "";
   position: absolute;
   inset: 1px;
-  background: var(--bg-gradient-yellow-1);
+  background: var(--orange-yellow-crayola);
   border-radius: inherit;
   z-index: -1;
   transition: var(--transition-1);
