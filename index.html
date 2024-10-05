@@ -513,14 +513,14 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+              <a data-nav-link data-target="proj-wizard">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                  <img src="./assets/images/project-wizard.jpg" alt="wizard_1" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">The Wizard Game</h3>
@@ -801,7 +801,7 @@
 
               <div class="proj-skills-icon-box">
                 <img src="./assets/images/icon-drone.png
-                " alt="robot palm icon" width="50">
+                " alt="drone icon" width="50">
               </div>
 
               <div>
@@ -830,7 +830,16 @@
           <img src="./assets/images/project-copter2.jpg" alt="copter_2" style="width:300px; display: inline-block;">
         </span>
 
+        <section class="about-text">
+          Example of the real-time IMU data on the web server
+        </section>
+        <video width="640" controls autoplay muted>
+          <source src="./assets/images/vdo-copter.mp4" type="video/mp4">
+        </video>
+        
+
       </article>
+
 
       <!--
         - #PROJECT: WIZARD GAME
@@ -853,17 +862,16 @@
             <li class="proj-skills-item">
 
               <div class="proj-skills-icon-box">
-                <img src="./assets/images/icon-drone.png
-                " alt="robot palm icon" width="50">
+                <img src="./assets/images/icon-wizard.png
+                " alt="wizard circuit icon" width="50">
               </div>
 
               <div>
                 <h4 class="h4 proj-skills-item-title">Skills</h4>
 
                 <p class="proj-skills-item-text">
-                  - Linux on Raspberry Pi<br>
-                  - I2C, SPI, WiFi<br>
-                  - IMU
+                  - Digital circuit design & assembly<br>
+                  - Finite State Machine
                 </p>
               </div>
 
@@ -874,22 +882,48 @@
         </section>
 
         <section class="about-text">
-          I assembled a quadcopter with brushless motors using Linux on Raspberry Pi.
-          The quadcopter streamed real-time IMU data (from Arduino via I2C), GPS, and webcam video via WiFi from Raspberry Pi to web server.
+          As a group project, we design a two player game using two parallel FSMs that interact through combinatorial logic.
         </section>
-        <br>
-        <span>
-          <img src="./assets/images/project-copter.jpg" alt="copter_1" style="width:300px;">
-          <img src="./assets/images/project-copter2.jpg" alt="copter_2" style="width:300px;">
-        </span>
-        <br>
-        <section class="about-text">
-          Example of the real-time IMU data on the web server
-          <video width="640" controls autoplay muted>
-            <source src="./assets/images/vdo-copter.mp4" type="video/mp4">
-          </video>
+
+        <section>
+
+          <h4 class="h3 proj-skills-item-title">Rules of Game</h3>
+          
+          <section class="about-text">
+          Each player has a mana level from 0-5, which is divided into tiers:
+          <ul>
+            <li>Tier I (mana level 1 or 2)</li>
+            <li>Tier II (mana level 3 or 4)</li>
+            <li>Tier III (mana level 5)</li>
+          </ul>
+          Both players start at mana level 0. Each turn, players simultaneously select one of the three actions:
+          <ul>
+            <li><b>Potion: </b> increment mana by 1, offer no protection nor damage.</li>
+            <li><b>Cast: </b> cast a spell on the opponent and reduce the caster’s mana to 0.
+              If both players cast spells at the same time, the play with stronger spell wins.
+              The strength of a spell is dependent on the caster’s mana level. Tier III spells can break through a Block.
+              Tier II spells beat both Tier I and Tier III spells. If both players cast spells in the same tier, the game is tied.</li>
+            <li><b>Block: </b>protect a player from a spell (except Tier III spell)</li>
+          </ul>
+          At the end of every round, the FSM logic counts and displays each player’s mana level and decides if any player has entered a win state.
+          The Wizard Game is played until a winner is decided or the game ties.
+          <br>
+          
+          </section>
+          
+          <p>
+            <h4 class="h4 proj-skills-item-title">Design</h4>
+            <section class="about-text">
+                The circuit consists of flip-flops, combinatorial logic, MUX, decoder, counter, timer chip,
+                7-segment displays for timer and mana levels, buttons for 3 actions, and reset button
+                <img src="./assets/images/project-wizard2.jpg" alt="wizard_2" style="width:200px;">
+                <img src="./assets/images/project-wizard3.jpg" alt="wizard_3" style="width:500px;">
+            </section>
+          </p>
+
         </section>
-        
+
+        <div class="separator"></div>
 
       </article>
   
