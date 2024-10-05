@@ -202,7 +202,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }*/
 
     const newUrl = `/${targetPage}`;
-    history.pushState(null, '', newUrl); // Modify the URL without refreshing
+    history.pushState({ page: targetPage }, '', newUrl); // Save the current state to history
   });
 }
 
