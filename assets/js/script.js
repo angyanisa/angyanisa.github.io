@@ -169,7 +169,9 @@ for (let i = 0; i < navigationLinks.length; i++) {
 }*/
 
 for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
+  navigationLinks[i].addEventListener("click", function (event) {
+    event.preventDefault();
+
     const targetPage = this.getAttribute("data-target");
 
     for (let i = 0; i < pages.length; i++) {
