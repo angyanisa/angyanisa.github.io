@@ -30,12 +30,6 @@
     }
   </style> -->
 
-  <style>
-    ul {
-      list-style-type: disc; /* Ensures bullet points */
-      padding-left: 20px;    /* Adds indentation for bullets */
-    }
-  </style>
 </head>
 
 <body>
@@ -483,7 +477,7 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item  active" data-filter-item data-category="2024">
               <a data-nav-link data-target="proj-sensopatch">
 
                 <figure class="project-img">
@@ -501,7 +495,7 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item  active" data-filter-item data-category="2024">
               <a data-nav-link data-target="proj-copter">
 
                 <figure class="project-img">
@@ -519,7 +513,26 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="2023">
+              <a data-nav-link data-target="proj-epiguard">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-epiguard.png" alt="epiguard_1" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">EpiGuard</h3>
+
+                <p class="project-category">Automatic flip-down protective glasses for people with photosensitive epilepsy, featuring seizure and fall detection</p>
+
+              </a>
+            </li>
+
+
+            <li class="project-item  active" data-filter-item data-category="2024">
               <a data-nav-link data-target="proj-wizard">
 
                 <figure class="project-img">
@@ -537,25 +550,8 @@
               </a>
             </li>
 
-            <!-- <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
+            
+            <!-- <li class="project-item  active" data-filter-item data-category="web design">
               <a href="#">
 
                 <figure class="project-img">
@@ -848,6 +844,86 @@
 
 
       <!--
+        - #PROJECT: EPIGUARD
+      -->
+
+      <article class="portfolio" data-page="proj-epiguard">
+
+        <header>
+          <a class="navbar-link" data-nav-link data-target="portfolio">
+            <ion-icon name="arrow-back-outline" style="zoom:4.0;"></ion-icon>
+            <h5>Back to Projects</h5>
+          </a>
+          <h2 class="h2 article-title">Epiguard</h2>
+        </header>
+
+        <section class="proj-skills">
+
+          <ul class="proj-skills-list">
+
+            <li class="proj-skills-item">
+
+              <div class="proj-skills-icon-box">
+                <img src="./assets/images/icon-wizard.png
+                " alt="wizard circuit icon" width="50">
+              </div>
+
+              <div>
+                <h4 class="h4 proj-skills-item-title">Skills</h4>
+
+                <p class="proj-skills-item-text">
+                  - Arduino<br>
+                  - Servo Motor, IMU, photoresistor
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <section class="about-text">
+          For people with photosensitive epilepsy, EpiGuard is a pair of glasses that can detect flashing and intense lights, which activates protective flip-down lenses.
+          EpiGuard features fall detection and seizure detection. In the event that a seizure still occurs, a notification will be sent to a wirelessly connected device.
+
+        </section>
+
+        <section>
+
+          <h3 class="h3 proj-skills-item-title">Design</h3>
+          <br>
+          <img src="./assets/images/project-epiguard.jpg" alt="epiguard_1" style="width:400px;">
+
+          <section class="about-text">
+          EpiGuard Companion App
+          <br>
+          <span>
+            <img src="./assets/images/project-epiguard2.jpg" alt="epiguard_2" style="width:250px; display: inline-block; margin-right: 10px;">
+            <img src="./assets/images/project-epiguard3.jpg" alt="epiguard_3" style="width:250px; display: inline-block; margin-right: 10px;">
+            <img src="./assets/images/project-epiguard4.jpg" alt="epiguard_4" style="width:250px; display: inline-block; margin-right: 10px;">
+          </span>
+          <br>
+          
+          EpiGuard Demo
+          <video width="640" controls autoplay muted>
+            <source src="./assets/images/vdo-epiguard2.mp4" type="video/mp4">
+          </video>
+          <br>
+          Fall Detection Demo
+          <video width="640" controls autoplay muted>
+            <source src="./assets/images/vdo-epiguard.mp4" type="video/mp4">
+          </video>
+          <br>
+          
+          </section>
+
+        </section>
+
+      </article>
+
+
+      <!--
         - #PROJECT: WIZARD GAME
       -->
 
@@ -858,7 +934,7 @@
             <ion-icon name="arrow-back-outline" style="zoom:4.0;"></ion-icon>
             <h5>Back to Projects</h5>
           </a>
-          <h2 class="h2 article-title">Wizard Game</h2>
+          <h2 class="h2 article-title">The Wizard Game</h2>
         </header>
 
         <section class="proj-skills">
@@ -898,18 +974,18 @@
           <section class="about-text">
           Each player has a mana level from 0-5, which is divided into tiers:
           <ul>
-            <li>Tier I (mana level 1 or 2)</li>
-            <li>Tier II (mana level 3 or 4)</li>
-            <li>Tier III (mana level 5)</li>
+            <li>• Tier I (mana level 1 or 2)</li>
+            <li>• Tier II (mana level 3 or 4)</li>
+            <li>• Tier III (mana level 5)</li>
           </ul>
           Both players start at mana level 0. Each turn, players simultaneously select one of the three actions:
           <ul>
-            <li><b>Potion: </b> increment mana by 1, offer no protection nor damage.</li>
-            <li><b>Cast: </b> cast a spell on the opponent and reduce the caster’s mana to 0.
+            <li><b>• Potion: </b> increment mana by 1, offer no protection nor damage.</li>
+            <li><b>• Cast: </b> cast a spell on the opponent and reduce the caster’s mana to 0.
               If both players cast spells at the same time, the play with stronger spell wins.
               The strength of a spell is dependent on the caster’s mana level. Tier III spells can break through a Block.
               Tier II spells beat both Tier I and Tier III spells. If both players cast spells in the same tier, the game is tied.</li>
-            <li><b>Block: </b>protect a player from a spell (except Tier III spell)</li>
+            <li><b>• Block: </b>protect a player from a spell (except Tier III spell)</li>
           </ul>
           At the end of every round, the FSM logic counts and displays each player’s mana level and decides if any player has entered a win state.
           The Wizard Game is played until a winner is decided or the game ties.
@@ -922,8 +998,16 @@
             <section class="about-text">
                 The circuit consists of flip-flops, combinatorial logic, MUX, decoder, counter, timer chip,
                 7-segment displays for timer and mana levels, buttons for 3 actions, and reset button
+                <br>
+                Circuit Simulation
                 <img src="./assets/images/project-wizard2.jpg" alt="wizard_2" style="width:200px;">
+                <br>
+                Circuit wiring
                 <img src="./assets/images/project-wizard3.jpg" alt="wizard_3" style="width:500px;">
+                Finished product!
+                <img src="./assets/images/project-wizard.jpg" alt="wizard_1" style="width:500px;">
+                <br>
+                <img src="./assets/images/project-wizard4.jpg" alt="wizard_4" style="width:500px;">
             </section>
           </p>
 
