@@ -168,12 +168,28 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }*/
 
+// Function to activate the page and navigation link based on targetPage
+function activatePage(targetPage) {
+  for (let j = 0; j < pages.length; j++) {
+    if (pages[j].dataset.page === targetPage) {
+      pages[j].classList.add("active");
+      navigationLinks[j].classList.add("active");
+      window.scrollTo(0, 0);
+    } else {
+      pages[j].classList.remove("active");
+      navigationLinks[j].classList.remove("active");
+    }
+  }
+}
+
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function (event) {
     event.preventDefault();
 
     const targetPage = this.getAttribute("data-target");
+    activatePage(targetPage);
 
+    /*
     for (let i = 0; i < pages.length; i++) {
       if (pages[i].dataset.page === targetPage) {
         pages[i].classList.add("active");
@@ -183,10 +199,16 @@ for (let i = 0; i < navigationLinks.length; i++) {
         pages[i].classList.remove("active");
         navigationLinks[i].classList.remove("active");
       }
-    }
+    }*/
 
     const newUrl = `/${targetPage}`;
     history.pushState(null, '', newUrl); // Modify the URL without refreshing
   });
-
 }
+
+  // Listen for back/forward button events (popstate)
+window.addEventListener("popstate", function (event) {
+  // Get the previous state from history (if available)
+  const targetPage = event.state?.page || 'home'; // Default to 'home' if no state is available
+  activatePage(targetPage);
+});
